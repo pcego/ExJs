@@ -11,10 +11,10 @@ let qtMaior = 0
 let qtMenor = 0
 let i = 0
 
-
-function recursive (){
-
     if(i === 3){
+
+
+        function recursive (){
 
         for(let x=0; x < idade.length; x++) {
             if (idade[x] > 18){

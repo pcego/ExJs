@@ -12,14 +12,25 @@ let somaPar = 0
 let somaPrimo = 0
 
 function primo(numero) {
+    let divisores = 0
 
-    if(numero !== 0 && numero !== 1){
-        numero % numero === 0
-        return true
+    for(let x = numero; x > 1; x--){
+        if(numero % x === 0){
+            divisores++
+        }
     }
-    else {
+    if(divisores > 1){
+
         return false
+
     }
+    else{
+       
+        return true
+
+    }
+
+
 }
 
 
@@ -42,7 +53,7 @@ function recursive (){
             somaPar += numero
         }
 
-        if(primo(numero)) {
+        if(primo(numero)){
            somaPrimo += numero
         }
 
