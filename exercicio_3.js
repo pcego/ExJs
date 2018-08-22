@@ -24,8 +24,8 @@ function primo(numero) {
         return false
 
     }
-    else{
-       
+    else if(numero !== 0 && numero !== 1){
+
         return true
 
     }
